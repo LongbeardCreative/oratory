@@ -1,0 +1,97 @@
+/******************************************************************
+Stylesheet: Universal Site Styles
+
+Only put styles in here that will be used across the entire site.
+For styles only applying to one particular page, use the appropriate
+page SCSS file.
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+    font-family: $body-font;
+    font-size: 100%;
+    line-height: 1.5;
+    color: $color-p;
+    background-color: $gray;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a,
+a:visited {
+    color: $color-active;
+    /* on hover */
+    &:hover,
+    &:focus {
+        color: $color-hover;
+    }
+    /* on click */
+    &:active {}
+    /* mobile tap color */
+    &:link {
+        /*
+        this highlights links on iPhones/iPads.
+        so it basically works like the :hover selector
+        for mobile devices.
+        */
+        -webkit-tap-highlight-color: rgba( 0, 0, 0, 0.3);
+    }
+}
+
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+    text-rendering: optimizelegibility;
+    /*
+    if you're going to use webfonts, be sure to check your weights
+    http://css-tricks.com/watch-your-font-weight/
+    */
+    /* removing text decoration from all headline links */
+    a {
+        text-decoration: none;
+    }
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+
+/******************************************************************
+COMMENT SECTION STYLES
+******************************************************************/
+
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+
+/*********************
+FOOTER STYLES
+*********************/
