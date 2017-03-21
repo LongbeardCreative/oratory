@@ -9,17 +9,15 @@ FONT FACE
 
 
 @font-face {
-  font-family: 'Gotham Rounded Medium';
-  src: url('../fonts/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamRounded-Medium.otf')  format('opentype'),
-	     url('../fonts/GothamRounded-Medium.woff') format('woff'), url('../fonts/GothamRounded-Medium.ttf')  format('truetype'), url('GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+  font-family: 'Bitter Regular';
+  src: url('https://fonts.googleapis.com/css?family=Bitter:400,700');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham Rounded Book';
-  src: url('../fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamRounded-Book.otf')  format('opentype'),
-	     url('../fonts/GothamRounded-Book.woff') format('woff'), url('../fonts/GothamRounded-Book.ttf')  format('truetype'), url('GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+  font-family: 'Scope One';
+  src: url('https://fonts.googleapis.com/css?family=Scope+One');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,23 +29,23 @@ $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 
 // theme fonts
 
-$heading-font:		80px 'Gotham Rounded Medium', $sans-serif;
-$body-font:			400 1em/1.2em 'Gotham Rounded Book', $sans-serif;
+$heading-font:		600 54px/56px 'Bitter Regular', $serif;
+$body-font:			400 22px/24px 'Bitter Regular', $serif;
+$header-font:       400 36px/38px 'Bitter Regular', $serif;
+$quote-font:        400 48px/68px 'Scope One', $serif;
 
-$h1:				800 6em/6.2em 'Gotham Rounded Book', $sans-serif;
-$h2:				600 5em/5.2em 'Gotham Rounded Book', $sans-serif;
-$h3:				600 4em/4.2em 'Gotham Rounded Book', $sans-serif;
-$h4:				400 3em/3.2em 'Gotham Rounded Book', $sans-serif;
-$h5:				400 2em/2.2em 'Gotham Rounded Book', $sans-serif;
-$h6:				400 1em/1.2em 'Gotham Rounded Book', $sans-serif;
+$h1:				600 36px/6.2em 'Bitter Regular', $serif;
+$h2:				600 32px/34px 'Bitter Regular', $serif;
+$h3:				400 28px/30px 'Scope One', $serif;
+$h4:				400 24px/26px 'Scope One', $serif;
+$h5:				400 22px/24px 'Scope One', $serif;
+$h6:				400 22px/24px 'Scope One', $serif;
 
 // Setting universal font styles
 
 h1 {
     font: $h1;
-    color: $color2;
     }
-    
 h2 {
     font: $h2;
     }
@@ -63,6 +61,9 @@ h5 {
 h6 {
     font: $h6;
     }
+em {
+    font: $quote-font;
+}
 
 
 p {
@@ -85,4 +86,3 @@ p {
        -o-font-feature-settings: "liga", "dlig";
           font-feature-settings: "liga", "dlig";
 }
-
