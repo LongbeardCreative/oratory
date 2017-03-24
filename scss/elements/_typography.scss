@@ -5,7 +5,7 @@ Stylesheet: Typography
 FONT FACE
 *********************/
 @font-face {
-    font-family: 'Bitter Regular';
+    font-family: 'Bitter';
     src: url('https://fonts.googleapis.com/css?family=Bitter:400,700');
     font-weight: normal;
     font-style: normal;
@@ -20,12 +20,12 @@ FONT FACE
 $sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: "Georgia", Cambria, Times New Roman, Times, serif;
 // theme fonts
-$heading-font: 600 54px/56px 'Bitter Regular', $serif;
-$body-font: 400 22px/24px 'Bitter Regular', $serif;
-$header-font: 400 36px/38px 'Bitter Regular', $serif;
+$heading-font: 600 54px/56px 'Bitter', $serif;
+$body-font: 400 22px/24px 'Bitter', $serif;
+$header-font: 400 36px/38px 'Bitter', $serif;
 $quote-font: 400 48px/68px 'Scope One', $serif;
-$h1: 600 36px/6.2em 'Bitter Regular', $serif;
-$h2: 600 32px/34px 'Bitter Regular', $serif;
+$h1: 600 36px/6.2em 'Bitter', $serif;
+$h2: 600 32px/34px 'Bitter', $serif;
 $h3: 600 28px/30px 'Scope One', $serif;
 $h4: 400 24px/26px 'Scope One', $serif;
 $h5: 400 22px/24px 'Scope One', $serif;
@@ -64,12 +64,13 @@ em {
 }
 
 a {
-    font-family: 'Bitter Regular', $serif;
+    font-family: 'Bitter', $serif;
 }
 
 .lb_learn_more {
     padding-bottom: 3px;
     color: $color3;
+    margin-top: 10px;
 
     &::after {
         content: '';
