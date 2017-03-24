@@ -64,12 +64,12 @@ em {
 }
 
 a {
-    font: $body-font;
+    font-family: 'Bitter Regular', $serif;
 }
 
 .lb_learn_more {
     padding-bottom: 3px;
-    color: $color2;
+    color: $color3;
 
     &::after {
         content: '';
@@ -85,7 +85,7 @@ a {
 
     &:hover {
         border-bottom: 1px solid;
-        color: $color2;
+        color: $color3;
     }
 }
 
