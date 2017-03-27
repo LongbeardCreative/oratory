@@ -88,10 +88,19 @@ HEADER STYLES
 /******************************************************************
 QUOTE SECTION STYLES
 ******************************************************************/
-em.second-line {
-    margin-left: 15%;
+em {
+    font: $quote-font;
+    color: $color2;
+    width: 130%;
+    display: block;
+    margin: 25px 0 25px !important;
+    &.first-line {
+        margin-left: -15%;
+    }
+    &.second-line {
+        margin-left: 15%;
+    }
 }
-
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
